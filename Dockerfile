@@ -12,6 +12,8 @@ RUN tar zxf /tmp/google_auth_proxy.tgz \
 
 VOLUME ["/config"]
 
+ONBUILD ADD ./google_auth_proxy.cfg /config/google_auth_proxy.cfg
+
 EXPOSE 4180
 
 CMD ["google_auth_proxy", "-c", "/config/google_auth_proxy.cfg"]
