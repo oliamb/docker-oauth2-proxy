@@ -16,4 +16,4 @@ ONBUILD ADD ./google_auth_proxy.cfg /config/google_auth_proxy.cfg
 
 EXPOSE 4180
 
-CMD ["google_auth_proxy", "-c", "/config/google_auth_proxy.cfg"]
+CMD ["google_auth_proxy", "-config", "/config/google_auth_proxy.cfg"]
