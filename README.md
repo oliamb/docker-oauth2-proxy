@@ -7,7 +7,7 @@ Docker image for [google\_auth\_proxy](https://github.com/bitly/google_auth_prox
 The image currently support config file which is a volume on /config
 
 ```
-$ docker run -d -p 4180:4180 -v $(pwd)/config:/config vic3lord/google-auth-proxy
+$ docker run -d -p 4180:4180 -v $(pwd):/config vic3lord/docker-gapp-proxy
 ```
 
 The dockerfile contains an `ONBUILD ADD` so you can use this image as base image  
